@@ -1,13 +1,21 @@
-export default function loginPage() {
+export default function LoginPage () {
     return(
-       <main>
+        <main>
         <header>
-            <nav className="">
-                
+            <nav className="navbar">
+                <div className="logoCont"></div>
+                <div className="links"></div>
             </nav>
         </header>
-        <main></main>
-        <footer></footer>
-       </main>
+        <main>
+            <div className="main-content">
+                <div className="loginBtn"></div>
+                <div className="arrowSvg"></div>
+            </div>
+        </main>
+        <footer>
+            <div className="footer-content"></div>
+        </footer>
+        </main>
     );
 }
