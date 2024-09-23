@@ -1,6 +1,15 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Outfit } from 'next/font/google'
+ 
+// If loading a variable font, you don't need to specify the font weight
+const outfit = Outfit({
+   subsets: ['latin'],
+   display: 'swap',
+   weight: "400",
+})
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -12,6 +21,11 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+// const outfit2 = localFont({
+//   src: "./fonts/Outfit-VariableFont_wght.ttf",
+//   variable: "--font-outfit",
+//   weight: "100 900",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${outfit.className} antialiased`}
       >
         {children}
       </body>
