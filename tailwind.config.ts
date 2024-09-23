@@ -1,3 +1,4 @@
+import { Outfit } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -55,7 +56,10 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		fontFamily:{
+			outfit: ['var(--font-outfit)']
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],

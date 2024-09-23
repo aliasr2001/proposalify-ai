@@ -1,0 +1,10 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dashed Oval -->
+  <ellipse cx="92" cy="110" rx="30" ry="21" stroke="green" stroke-width="2" fill="none" stroke-dasharray="4,4" />
+  
+  <!-- Curved Dashed Line for Arrow -->
+  <path d="M 33 200 Q 50 50, 175 50" stroke="green" stroke-width="2" fill="none" stroke-dasharray="4,4" />
+  
+  <!-- Arrowhead -->
+  <path d="M 147 42 L 170 50 L 160 70" stroke="green" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
+</svg>
